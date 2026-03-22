@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope Foundation | Empower a Life</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="images/logo.jpg" alt="Hope Foundation Logo" class="logo-img">
+            <span class="logo-text">Hope Foundation</span>
+        </div>
+        
+        <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle menu">
+            ☰
+        </button>
+
+        <nav id="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#transformation">Transformations</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Every child deserves a chance to dream.</h1>
+                <p>We are on a mission to bring education, meals, and medical care to vulnerable children. Your direct support changes their reality today.</p>
+            </div>
+
+            <div class="donation-card">
+                <h3>Make a Direct Impact</h3>
+                <p>Select an amount to give:</p>
+                
+                <div class="amount-grid">
+                    <button class="amount-btn active" data-amount="10">$10</button>
+                    <button class="amount-btn" data-amount="25">$25</button>
+                    <button class="amount-btn" data-amount="50">$50</button>
+                    <button class="amount-btn" data-amount="100">$100</button>
+                </div>
+                
+                <button id="main-donate-btn" class="submit-btn">Donate $10 Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="transformation">
+        <h2>See the Difference You Make</h2>
+        <p>Slide to reveal how your support transforms a community.</p>
+        
+        <div class="ba-slider-container">
+            <div class="ba-after" style="background-image: url('images/after.jpg');">
+                <span class="ba-label">AFTER: Learning & Thriving</span>
+            </div>
+            <div class="ba-before" style="background-image: url('images/before.jpg');">
+                <span class="ba-label">BEFORE: Limited Resources</span>
+            </div>
+            <div class="ba-handle" id="ba-handle">
+                <div class="handle-line"></div>
+                <div class="handle-circle"><span>&lsaquo;&rsaquo;</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+        <div class="container text-center">
+            <h2>Our Mission</h2>
+            <p class="lead-text">We believe that every individual deserves access to basic human rights: education, healthcare, and a safe environment. Founded on the principles of equity and compassion, we work directly with local communities to build sustainable, long-term solutions.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section bg-gray">
+        <div class="container">
+            <div class="contact-header text-center">
+                <h2>Get in Touch</h2>
+                <p>Have questions or want to volunteer? Send us a message.</p>
+            </div>
+            
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email Address" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="How can we help?" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn form-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>🌿 Hope Foundation</h3>
+                <p>Empowering lives through education and community support. Building a better tomorrow, today.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#hero">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Volunteer</a>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Contact Details</h4>
+                <p>📧 hello@hopefoundation.org</p>
+                <p>📞 +1 (555) 123-4567</p>
+                <p>📍 123 Hope Street, Global City</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Hope Foundation. Designed for impact.</p>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast-hidden">
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
