@@ -51,18 +51,15 @@
 
     <section id="transformation">
         <h2>See the Difference You Make</h2>
-        <p>Slide to reveal how your support transforms a community.</p>
+        <p>Hover over the image to see how your support transforms a community.</p>
         
-        <div class="ba-slider-container">
-            <div class="ba-after" style="background-image: url('images/after.jpg');">
-                <span class="ba-label">AFTER: Learning & Thriving</span>
+        <div class="hover-container">
+            <div class="image-before" style="background-image: url('images/before.jpg');">
+                <span class="image-label">BEFORE: Limited Resources</span>
             </div>
-            <div class="ba-before" style="background-image: url('images/before.jpg');">
-                <span class="ba-label">BEFORE: Limited Resources</span>
-            </div>
-            <div class="ba-handle" id="ba-handle">
-                <div class="handle-line"></div>
-                <div class="handle-circle"><span>&lsaquo;&rsaquo;</span></div>
+            
+            <div class="image-after" style="background-image: url('images/after.jpg');">
+                <span class="image-label after-label">AFTER: Learning & Thriving</span>
             </div>
         </div>
     </section>
@@ -123,8 +120,12 @@
         </div>
     </footer>
 
-    <div id="toast" class="toast-hidden">
+    <div id="popup-overlay" class="popup-hidden">
+        <div class="popup-box">
+            <button id="close-popup" class="close-btn">&times;</button>
+            <p id="popup-message"></p>
         </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
